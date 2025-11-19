@@ -1,0 +1,19 @@
+# GPU dependencies (RAPIDS cuML)
+# Note: cuML requires CUDA 11.0+ and specific CUDA toolkit versions
+# Installation via pip (recommended for most users):
+# pip install cuml-cu11 --extra-index-url=https://pypi.nvidia.com
+# or for CUDA 12:
+ pip install cuml-cu12 --extra-index-url=https://pypi.nvidia.com
+
+# Base dependencies (CPU)
+-r requirements.txt
+
+# GPU acceleration (cuML)
+# Uncomment the appropriate line based on your CUDA version:
+# cuml-cu11>=23.12.0  # For CUDA 11.x
+#  cuml-cu12>=23.12.0  # For CUDA 12.x
+
+# Alternative: Install via conda (recommended for RAPIDS):
+# conda create -n rapids-env -c rapidsai -c conda-forge -c nvidia \
+#     cuml=23.12 python=3.10 cudatoolkit=11.8
+
