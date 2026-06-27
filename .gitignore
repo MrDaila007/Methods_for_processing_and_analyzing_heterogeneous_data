@@ -1,3 +1,10 @@
+# Presentations
+**/*.pptx
+
+# Datasets and binary model artifacts
+GNN_GCN/data/
+Node2Vec/ml-100k/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
