@@ -4,6 +4,9 @@
 # Datasets and binary model artifacts
 GNN_GCN/data/
 Node2Vec/ml-100k/
+Lab3/models/
+runs/
+Lab3/data/demo/pred_*.jpg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
